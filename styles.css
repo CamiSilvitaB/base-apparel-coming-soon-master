@@ -53,9 +53,42 @@ nav {
   color: var(--darkGrayishRed);
 }
 .info_container p:nth-child(3){
-  margin-top: 25px;
+  margin-top: 15px;
   font-size: 12px;
   font-weight: 400;
   line-height: 150%;
   color: var(--desaturated-Red);
 }
+
+.email_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+.email_container input {
+  width: 260px;
+  height: 50px;
+  padding: 20px;
+  border-radius: 100px;
+  border: var(--desaturated-Red) solid 1px;
+  color: hsla(0, 36%, 70%, 0.509);
+  font-size: 12px;
+  font-weight: 400;
+}
+.email_button {
+  position: absolute;
+  width: 60px;
+  height: 50px;
+  margin-left: 200px;
+  border: none;
+  border-radius: 100px;
+  background-color: var(--softRed);
+  background: linear-gradient(135deg, hsl(0, 80%, 86%) 0%, hsl(0, 74%, 74%) 100%);
+  box-shadow: 4px 4px 30px -4px hsl(0, 74%, 74%);
+}
+
+footer {
+  width: 100vw;
+  height: 100px;
+}
+
