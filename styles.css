@@ -69,12 +69,24 @@ nav {
   color: var(--desaturated-Red);
 }
 
-.email_container {
+.form_container {
   display: flex;
   justify-content: center;
   margin-top: 25px;
 }
-.email_container input {
+.email_input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input_error{
+  position: absolute;
+  margin-top: 13px;
+  padding-left: 160px;
+  visibility: hidden;
+}
+
+.email_input {
   width: 260px;
   height: 50px;
   padding: 20px;
@@ -83,6 +95,21 @@ nav {
   color: hsla(0, 36%, 70%, 0.509);
   font-size: 12px;
   font-weight: 400;
+}
+.email_input::placeholder {
+  color: hsla(0, 36%, 70%, 0.662) ;
+}
+.email_input:focus {
+  outline-color: var(--desaturated-Red);
+
+}
+.errorText {
+  height: 20px;
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 12px;
+  color: var(--softRed);
+  visibility: hidden;
 }
 .email_button {
   position: absolute;
@@ -94,9 +121,11 @@ nav {
   background-color: var(--softRed);
   background: linear-gradient(135deg, hsl(0, 80%, 86%) 0%, hsl(0, 74%, 74%) 100%);
   box-shadow: 4px 4px 30px -4px hsl(0, 74%, 74%);
+  cursor: pointer;
 }
 
 footer {
   width: 100vw;
   height: 55px;
 }
+

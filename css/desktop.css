@@ -40,11 +40,9 @@ nav {
   margin-top: 50px;
 }
 
-.home_info-container div {
-  margin-left: 75px;
-}
 
 .info_container p{
+  margin-left: 75px;
   text-align: start;
 }
 
@@ -61,7 +59,7 @@ nav {
 }
 .info_container p:nth-child(3){
   margin-top: 15px;
-  margin-left: 0;
+  margin-left: 75px;
   margin-right: 100px;
   font-size: 12px;
   font-weight: 400;
@@ -69,8 +67,23 @@ nav {
   color: var(--desaturated-Red);
 }
 
-.email_container input {
-  width: 360px;
+.form_container {
+  justify-content: start;
+}
+
+.email_input-container {
+  margin-left: 75px;
+}
+.input_container {
+  margin-left: 0;
+}
+.input_error {
+  margin-top: 8px;
+  padding-left: 195px;
+}
+
+.email_input {
+  width: 330px;
   height: 40px;
 }
 
@@ -78,5 +91,5 @@ nav {
   position: absolute;
   width: 60px;
   height: 41px;
-  margin-left: 300px;
+  margin-left: 345px;
 }
