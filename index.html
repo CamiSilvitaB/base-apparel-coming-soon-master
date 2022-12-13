@@ -15,58 +15,64 @@
 </head>
 <body>
 
-<!---------- Logo  ------------>
-
-<section class="container">
-  <header>
-    <nav>
-      <div class="logo_container"><img src="./images/logo.svg" alt="Logo Base Apparel"></div>
-    </nav>
-  </header>
-
-<!---------- Home  --------------->
-
-  <section class="home">
-
-    <section class="home_img-container">
-      <div class="hero_img"></div>
-    </section>
-
-    <section class="home_info-container">
-
-      <section class="info_container">
-        <div>
-          <p >W E ' R E</p>
-          <P>C O M I N G <br> S O O N</P>
-          <P>Hello fellow shoppers! We're currently building
-            our new fashion store. Add your email below to
-            stay up-to-date with announcements and our
-            launch deals</P>
+    <header>
+      <nav>
+        <div class="logo_container">
+          <img src="./images/logo.svg" alt="Logo Base Apparel">
         </div>
+      </nav>
+    </header>
+
+
+    <section class="home">
+
+      <section class="home_img-container">
+        <div class="hero_img"></div>
       </section>
 
-      <section class="form_container">
-        <div class="email_input-container">
-          <div class="input_container">
-            <div class="input_error">            
-              <img src="./images/icon-error.svg" alt="">
-            </div>
-            <input type="text" placeholder="Email Address" class="email_input" id="email" >
+      <section class="home_info-container">
+
+        <section class="info_container">
+          <div>
+            <p >W E ' R E</p>
+            <P>C O M I N G <br> S O O N</P>
+            <P>Hello fellow shoppers! We're currently building
+              our new fashion store. Add your email below to
+              stay up-to-date with announcements and our
+              launch deals</P>
           </div>
-          <small class="errorText">Please provide a valid email</small>
-        </div>
-        <button class="email_button"><img src="./images/icon-arrow.svg" alt=""></button>
+        </section>
+
+        <form  class="form_container" id="form">
+
+          <div class="email_input-container">
+
+            <div class="input_container">
+              <div class="input_error">            
+                <img src="./images/icon-error.svg" alt="">
+              </div>
+              
+              <input type="email" placeholder="Email Address" class="email_input" id="email" >
+            </div>
+            <small class="errorText">Please provide a valid email</small>
+
+          </div>
+          <div class="submitButton_container">
+            <input class="email_button" type="submit" value="" id="submit">
+            <img class="iconButton" src="./images/icon-arrow.svg" alt="">
+          </div>
+
+        </form >
+          
+          
+
       </section>
-
-    </section>
     
-  </section>
+    </section>
 
-  <footer></footer>
-</section>
+    <footer></footer>
 
-  
-  <!-- Error input -->
+
   <script src="./main.js"></script>
 </body>
 </html>

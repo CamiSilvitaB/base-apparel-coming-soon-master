@@ -79,7 +79,7 @@ nav {
 }
 .input_error {
   margin-top: 8px;
-  padding-left: 195px;
+  margin-left: 240px;
 }
 
 .email_input {
@@ -87,9 +87,15 @@ nav {
   height: 40px;
 }
 
+
+.submitButton_container {
+  margin-left: 344px;
+  margin-top: -4px;
+}
+
 .email_button {
   position: absolute;
   width: 60px;
   height: 41px;
-  margin-left: 345px;
+  margin-left: -60px;
 }

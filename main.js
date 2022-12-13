@@ -1,16 +1,26 @@
-function validateEmail(){                
-	// Get our input reference.
-	const emailField = document.getElementById('email');
-	
-	// Define our regular expression.
-	const validEmail =  /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
+const submit = document.querySelector("#submit")
+const error = document.querySelector(".errorText")
+const form = document.querySelector("form")
+const email = document.querySelector("#email")
+const iconError = document.querySelector(".input_error")
 
-	// Using test we can check if the text match the pattern
-	if( validEmail.test(emailField.value) ){
-		valido.innerText = "válido extraoficialmente";
-		return true;
-	}else{
-		valido.innerText = "Please provide a valid email";
-		return false;
-	}
-} 
+form.addEventListener("submit", validate)
+submit.addEventListener("click", validate)
+
+function validate(e) {
+  e.preventDefault()
+
+  const emailValue = email.value.trim()
+
+  if (!isEmail(emailValue)) {
+    error.style.display = "block"
+    iconError.style.display = "block"
+  } else {
+    error.style.display = "none"
+    iconError.style.display = "none"
+  }
+}
+
+function isEmail(email) {
+  return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)
+}
